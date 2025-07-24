@@ -291,6 +291,8 @@ html {
     height: calc(50% - .75rem);
     position: relative;
     border-radius: 1.25rem;
+     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .d4 {
@@ -299,11 +301,48 @@ html {
     height: calc(50% - .75rem);
     position: relative;
     border-radius: 1.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* join part style */
 .join{
-    
+    background-image: url("assets/news-letter-bg.png");
+    height: 33.31rem;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    /* background-position: center; */
+}
+.d5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.d5 h2{
+    font-weight: bold;
+    /* font-size: 3.12rem; */
+font-size: 4vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+.d6 input{
+    font-size: 1.6vw;
+    padding: 1vw;
+    padding-right: 25vw;
+}
+.d6 button{
+    font-size: 1.6vw;
+    font-weight: 500;
+    padding: 1vw 3vw;
+    background-color: #E95A08;
+    border: none;
+}
+.d6{
+    display: flex;
+    max-width: 83vw;
+    margin-top: 2.2vw;
 }
 /* media */
 @media screen and (max-width: 576px) {
@@ -469,28 +508,28 @@ html {
         width: 100%;
         position: relative;
         border-radius: 1.25rem;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-
-    }
+         }
 
     .d3 {
         height: 11.55rem;
         width: 100%;
         position: relative;
         border-radius: 1.25rem;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-
-    }
+        }
 
     .d4 {
         height: 11.55rem;
         position: relative;
         border-radius: 1.25rem;
-        background-size: cover;
-        background-repeat: no-repeat;
+    }
+    /* join part style */
+    .join{
+        height: 17.25rem;
+    }
+    .d5 h2{
+        font-size: 2vw;
+    }
+    .d6{
+        /* width: 32vw; */
     }
 }
