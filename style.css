@@ -1,0 +1,269 @@
+/* shared style */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.noto-serif-normal {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.org {
+    color: #E95A08;
+}
+
+.blk {
+    color: #000000;
+}
+
+.crd-blk {
+    color: #111111;
+}
+
+.crd-white {
+    color: #FFFFFF;
+}
+
+.txt {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.ftr-list {
+    color: #6B7280;
+}
+
+.hm {
+    color: #252432;
+}
+
+.sh {
+    color: #8987A1;
+}
+
+
+
+/* nav */
+nav {
+    margin: 30px 150px 120px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 48px;
+    padding: 18px 0;
+}
+
+nav i {
+    margin-right: 7px;
+}
+
+nav img {
+    width: 135px;
+    height: 82px;
+}
+
+
+/* banner */
+.banner {
+    display: flex;
+    margin: 30px 150px 120px 150px;
+}
+
+.banner img {
+    width: 50%;
+    padding-top: 106px;
+}
+
+.banner .title {
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.banner .description {
+    font-weight: 22px;
+}
+
+.banner .text {
+    width: 50%;
+    padding-top: 165px;
+}
+
+/* our plant style */
+.plant {
+    margin: 0 150px;
+}
+
+.plant h3 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 16px;
+}
+
+.plant>p {
+    text-align: center;
+    margin-bottom: 49px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 20px;
+}
+
+.card p {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 11px;
+    margin-bottom: 7px;
+}
+
+.card h5 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.card button {
+    background-color: #E95A08;
+    border: none;
+    width: 270px;
+    height: 15px;
+    text-align: center;
+    height: 50px;
+    margin-top: 11px;
+}
+
+html{
+        overflow-x: hidden;
+
+}
+
+/* media */
+@media screen and (max-width: 576px) {
+
+    /* nav */
+
+    nav {
+        /* margin: 13px 16px 28px 16px; */
+        margin: .8rem 1rem 1.8rem 1rem;
+    }
+
+    nav img {
+        width: 3.9rem;
+        height: 2.3rem;
+    }
+
+    nav ul {
+        gap: .8rem;
+        padding: .75rem 0;
+    }
+
+    li:nth-child(1),
+    li:nth-child(2),
+    li:nth-child(3) {
+        visibility: hidden;
+    }
+
+    /* banner */
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .banner img {
+        width: 100%;
+        margin: 1.8rem 1rem;
+        padding-top: 0;
+    }
+
+    .banner .title {
+        font-size: 1.5rem;
+    }
+
+    .banner .description {
+        font-size: .9rem;
+    }
+
+    .banner .text {
+        width: 100%;
+        /* margin: 13px 16px 28px 16px; */
+                margin: .8rem 1rem 1.8rem 1rem;
+
+        padding-top: 0;
+
+    }
+
+    /* our plant style */
+.plant {
+    margin: 0 1rem;
+}
+.br{
+    display: none;
+}
+.plant h3 {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.plant>p {
+    margin-bottom: 1.6rem;
+}
+
+.container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin: 0 1rem;
+}
+
+.card p {
+    font-size: 1.4rem;
+    margin-top: .8rem;
+    margin-bottom: .5rem;
+}
+.card img{
+    width: 100%;
+}
+
+.card h5 {
+    font-size: 1.4rem;
+    margin-bottom: .8rem;
+}
+
+.card button {
+    
+    width: 100%;
+    height: 3.1rem;
+    margin-top: .8rem;
+}
+
+}
