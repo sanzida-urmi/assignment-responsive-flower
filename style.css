@@ -242,9 +242,9 @@ html {
         padding: .75rem 0;
     }
 
-    li:nth-child(1),
-    li:nth-child(2),
-    li:nth-child(3) {
+    nav li:nth-child(1),
+    nav li:nth-child(2),
+    nav li:nth-child(3) {
         visibility: hidden;
     }
 
@@ -322,8 +322,39 @@ html {
     }
 
     /* badge */
-    .container2 {
-   flex-direction: column-reverse;
+.container2 {
+    margin: 0 10vw;
+    margin-top: 2.56rem;
+    height: 100%;
+    gap: 1.1rem;
+    flex-direction: column;
 }
+.badge{
+    visibility: hidden;
+}
+.bck-img {
+        width: 100%;
+    height: 25rem;
+    background-size: cover;
+       background-position: center;      
+
+}
+.txt2 h2{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    
+}
+.txt2 ul li{
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+.br2{
+    display: none;
+}
+.txt2{
+     display: block;
+    text-align: start; 
+     width: 100%;
+} 
 
 }
