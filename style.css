@@ -57,7 +57,8 @@
 
 /* nav */
 nav {
-    margin: 30px 150px 120px 150px;
+    /* margin: 30px 150px 120px 150px; */
+    margin: 30px 10vw;
     display: flex;
     justify-content: space-between;
 }
@@ -89,81 +90,136 @@ nav img {
 /* banner */
 .banner {
     display: flex;
-    margin: 30px 150px 120px 150px;
+    margin: 30px 10vw;
 }
 
 .banner img {
     width: 50%;
-    padding-top: 106px;
+    padding-top: 6.6rem;
 }
 
 .banner .title {
-    font-size: 65px;
+    font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 13px;
+    margin-bottom: .81rem;
 }
 
 .banner .description {
-    font-weight: 22px;
+    font-weight: 1.3rem;
 }
 
 .banner .text {
     width: 50%;
-    padding-top: 165px;
+    padding-top: 10rem;
 }
 
 /* our plant style */
 .plant {
-    margin: 0 150px;
+    margin: 0 10vw;
 }
 
+
 .plant h3 {
-    font-size: 50px;
+    font-size: 3.1rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 120px;
-    margin-bottom: 16px;
+    margin-top: 7.5rem;
+    margin-bottom: 1rem;
 }
 
 .plant>p {
     text-align: center;
-    margin-bottom: 49px;
+    margin-bottom: 3rem;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px 20px;
+    gap: 2.5rem 1.25rem;
+    width: 100%;
+    max-width: 100%;
 }
 
 .card p {
-    font-size: 22px;
+    font-size: 1.3rem;
     text-align: center;
-    margin-top: 11px;
-    margin-bottom: 7px;
+    margin-top: .6rem;
+    margin-bottom: .9rem;
 }
 
 .card h5 {
-    font-size: 22px;
+    font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 7px;
+    margin-bottom: .9rem;
 }
 
 .card button {
     background-color: #E95A08;
     border: none;
-    width: 270px;
-    height: 15px;
+    width: 100%;
+    max-width: 100%;
     text-align: center;
-    height: 50px;
-    margin-top: 11px;
+    height: 3.1rem;
+    margin-top: .6rem;
 }
 
-html{
-        overflow-x: hidden;
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+html {
+    overflow-x: hidden;
 
 }
+
+/* badge part style */
+.container2 {
+    display: flex;
+    margin: 0 10vw;
+    margin-top: 13.12rem;
+    height: 37.31rem;
+    gap: 5rem;
+}
+
+.bck-img {
+    
+    background-image: url("assets/flower-store.png");
+    width: calc( (100% - 5rem) / 2 );
+    background-size: cover;
+       background-position: center;
+        position: relative;
+         
+
+}
+.badge{
+    width: 17.87rem;
+    height: 17.87rem;
+    position: absolute;
+    top: -8rem;
+    /* left: 23rem; */
+    left: clamp(2rem, 26vw, 23rem); 
+}
+.txt2 h2{
+    font-size: 3.12rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+}
+.txt2 ul li{
+    font-size: 1.37rem;
+    margin-bottom: 1.37rem;
+}
+
+.txt2{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;  
+     width: calc( (100% - 5rem) / 2 );
+} 
+
 
 /* media */
 @media screen and (max-width: 576px) {
@@ -171,8 +227,9 @@ html{
     /* nav */
 
     nav {
-        /* margin: 13px 16px 28px 16px; */
-        margin: .8rem 1rem 1.8rem 1rem;
+       
+        margin: .8rem 10vw;
+
     }
 
     nav img {
@@ -207,63 +264,66 @@ html{
 
     .banner .title {
         font-size: 1.5rem;
+        margin: 0 10vw 0 10vw;
     }
 
     .banner .description {
         font-size: .9rem;
+        margin: 0 10vw 0 10vw;
+
     }
 
     .banner .text {
         width: 100%;
-        /* margin: 13px 16px 28px 16px; */
-                margin: .8rem 1rem 1.8rem 1rem;
-
+        margin: .8rem 1rem 1rem 1rem;
         padding-top: 0;
 
     }
 
     /* our plant style */
-.plant {
-    margin: 0 1rem;
-}
-.br{
-    display: none;
-}
-.plant h3 {
-    font-size: 1.5rem;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-}
+    .plant {
+        margin: 0 10vw;
+    }
 
-.plant>p {
-    margin-bottom: 1.6rem;
-}
+    .br {
+        display: none;
+    }
 
-.container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-    margin: 0 1rem;
-}
+    .plant h3 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
 
-.card p {
-    font-size: 1.4rem;
-    margin-top: .8rem;
-    margin-bottom: .5rem;
-}
-.card img{
-    width: 100%;
-}
+    }
 
-.card h5 {
-    font-size: 1.4rem;
-    margin-bottom: .8rem;
-}
+    .plant>p {
+        margin-bottom: 1.6rem;
 
-.card button {
-    
-    width: 100%;
-    height: 3.1rem;
-    margin-top: .8rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .card p {
+        font-size: 1.4rem;
+    }
+
+    .card h5 {
+        font-size: 1.4rem;
+        margin-bottom: .8rem;
+    }
+
+    .card button {
+
+        width: 100%;
+        height: 3.1rem;
+        margin-top: .8rem;
+    }
+
+    /* badge */
+    .container2 {
+   flex-direction: column-reverse;
 }
 
 }
