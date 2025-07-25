@@ -312,7 +312,6 @@ html {
     background-size: cover;
     width: 100%;
     position: relative;
-    /* background-position: center; */
 }
 .d5{
     position: absolute;
@@ -322,7 +321,6 @@ html {
 }
 .d5 h2{
     font-weight: bold;
-    /* font-size: 3.12rem; */
 font-size: 4vw;
     text-align: center;
     color: #FFFFFF;
@@ -343,6 +341,21 @@ font-size: 4vw;
     display: flex;
     max-width: 83vw;
     margin-top: 2.2vw;
+}
+
+/* footer style */
+footer{
+    margin: 5vw 10vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.f4 img{
+    margin-right: 2.5vw;
+}
+footer li{
+    color: #6B7280;
+    list-style: none;
+    margin-bottom: 2vw;
 }
 /* media */
 @media screen and (max-width: 576px) {
@@ -527,9 +540,11 @@ font-size: 4vw;
         height: 17.25rem;
     }
     .d5 h2{
-        font-size: 2vw;
+        font-size: 3vw;
     }
-    .d6{
-        /* width: 32vw; */
-    }
+    .d6 input{
+    font-size: 2vw;
+    padding: 2vw;
+    padding-right: 2vw;
+}
 }
