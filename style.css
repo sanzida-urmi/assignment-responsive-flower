@@ -443,6 +443,9 @@ footer li{
         gap: 1.25rem;
     }
 
+    .cd{
+        display: none;
+    }
     .card p {
         font-size: 1.4rem;
     }
