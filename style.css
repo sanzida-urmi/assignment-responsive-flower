@@ -348,15 +348,17 @@ footer{
     margin: 5vw 10vw;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    justify-items: center;
 }
 .f4 img{
-    margin-right: 2.5vw;
+    margin-left: 1.5vw;
 }
 footer li{
     color: #6B7280;
     list-style: none;
     margin-bottom: 2vw;
 }
+
 /* media */
 @media screen and (max-width: 576px) {
 
@@ -546,5 +548,19 @@ footer li{
     font-size: 2vw;
     padding: 2vw;
     padding-right: 2vw;
+}
+
+/* footer */
+footer{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: start;
+}
+.f1 p{
+    margin: 4vw 0;
+}
+.f4 img{
+    margin-left: 0;
+    margin-right: 1.5vw;
+    margin-top: 1.7vw;
 }
 }
